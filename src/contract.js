@@ -1,4 +1,4 @@
-const { getWeb3 } = require('./utils')
+const { getWeb3, retry } = require('./utils')
 require('dotenv').config()
 
 const Axios = require('axios').default
