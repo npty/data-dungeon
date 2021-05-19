@@ -47,5 +47,5 @@ function isStableCoins(token, chainId = 1) {
 module.exports = {
   getWeb3,
   isStableCoins,
-  retry
+  retry,
 }
