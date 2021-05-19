@@ -1,6 +1,6 @@
 // https://docs.google.com/document/d/1LKP_LZMkpkGHvT6xzclMp1kl3pj1rJGFqflafNsDkaQ/edit#
 const { getWeb3, isStableCoins, retry } = require('./utils')
-const routerAbi = require('./router.json')
+const routerAbi = require('./abi/router.json')
 
 const Axios = require('axios').default
 
