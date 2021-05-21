@@ -1,4 +1,6 @@
-function sort1InchSwapStablecoinValue(events, sortDir = 'desc') {
+const { isStableCoins } = require('./utils')
+
+function sort1InchSwapStablecoinValue(events, chainId = '1', sortDir = 'desc') {
   return events.sort((eventA, eventB) => {
     let amountA;
     let amountB;

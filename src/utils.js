@@ -1,9 +1,10 @@
 const Web3 = require('web3')
+require('dotenv').config()
 
 function getWeb3(chainId = 1) {
   let provider
   if (chainId === 1) {
-    provider = "https://mainnet.infura.io/v3/a3a667b533f34fd48ca350546454ea05"
+    provider = process.env.INFURA_ENDPOINT
   } else if (chainId === 56) {
     provider = "https://bsc-dataseed.binance.org/"
   } else {

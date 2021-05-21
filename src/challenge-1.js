@@ -16,9 +16,9 @@ async function findLargestSwapOn1InchV3(chainId = 1) {
   }
 
   const events = await getPastEvents(contract, 'Swapped', params, 5000, chainId)
-  const swapValueSorted = sort1InchSwapStablecoinValue(events)
+  const [biggestTx] = sort1InchSwapStablecoinValue(events, chainId)
 
-  console.log(swapValueSorted[0])
+  console.log(biggestTx)
 }
 
 findLargestSwapOn1InchV3(56)
